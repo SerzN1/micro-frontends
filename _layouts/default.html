@@ -9,10 +9,13 @@
     <link rel="canonical" href="https://micro-frontends.org/" />
     <link rel="alternate" hreflang="ja" href="https://micro-frontends-japanese.org/" />
     <link rel="alternate" hreflang="es" href="https://micro-frontends-es.org/" />
+    <link rel="alternate" hreflang="pt" href="https://tautorn.github.io/micro-frontends/" />
+    <link rel="alternate" hreflang="ko" href="https://soobing.github.io/micro-frontends/" />
+    <link rel="alternate" hreflang="ru" href="https://serzn1.github.io/micro-frontends/" />
     <meta name="google-site-verification" content="c7SiEYdpLXi4umYrM7Ey3HXm3AkK8vlsmc9X4ThnYSA" />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://micro-frontends.org/" />
-    <meta property="og:image" content="/ressources/screen/three-teams.png" />
+    <meta property="og:image" content="./ressources/screen/three-teams.png" />
     <meta property="og:site_name" content="Micro Frontends" />
     <meta property="og:description" content="Techniques, strategies and recipes for building a modern web app with multiple teams using different JavaScript frameworks." />
     <script type="application/ld+json">
@@ -72,18 +75,12 @@
           <a href="{{ site.github.repository_url }}" class="button"><small>Follow me on</small> GitHub</a>
         {% endif %}
         <div class="languages">
-          {% if current_page == '/' %}
-            <strong>EN</strong>
-          {% else %}
-            <a href="/">EN</a>
-          {% endif %}
+          <a href="https://micro-frontends.org/">EN</a>
           <a href="https://micro-frontends-japanese.org/">JP</a>
           <a href="https://micro-frontends-es.org/">ES</a>
-          {% if current_page == '/ru/' %}
-            <strong>RU</strong>
-          {% else %}
-            <a href="/ru">RU</a>
-          {% endif %}
+          <a href="https://tautorn.github.io/micro-frontends/">PT</a>
+          <a href="https://soobing.github.io/micro-frontends/">KR</a>
+          <strong>RU</strong>
         </div>
       </div>
     </header>
@@ -95,37 +92,28 @@
         </section>
 
         <aside id="sidebar">
-          <div class="author">
-            <h2>The Author</h2>
-            <img src="/ressources/images/michael-geers-75.jpg" srcset="/ressources/images/michael-geers-75.jpg 1x, /ressources/images/michael-geers-150.jpg 2x" alt="Author Michael Geers">
-            <a href="http://geers.tv"><strong>Michael Geers</strong></a> is a software engineer at <a href="https://www.neuland-bfi.de/">neuland Büro für Informatik</a>.<br>He worked on multiple large e-commerce projects over the last ten years.<br>He loves the frontend and is passionate about design systems and web-performance.<br>
-            Follow on <a href="https://twitter.com/naltatis">Twitter</a> or <a href="https://github.com/naltatis">GitHub</a>.
-          </div>
+
           <div class="book">
             <div class="book__inner">
-              <h2>🚜 The Book</h2>
-              <a href="https://www.manning.com/books/micro-frontends-in-action?a_aid=mfia&a_bid=5f09fdeb">
-                <img src="/ressources/images/micro-frontends-in-action-book-200.png" srcset="/ressources/images/micro-frontends-in-action-book-200.png 1x, /ressources/images/micro-frontends-in-action-book-400.png 2x" alt="book cover Micro Frontends in Action">
-                <span>
-                    <strong>Micro Frontends in Action</strong>
-                    available in Manning Early Access Program (MEAP)
-                </span>
-              </a>
+              <h2>Книга 🚜</h2>
+              <div class="book__details">
+                <a href="https://www.manning.com/books/micro-frontends-in-action?a_aid=mfia&a_bid=5f09fdeb">
+                  <img src="./ressources/images/micro-frontends-in-action-book-200.png" srcset="./ressources/images/micro-frontends-in-action-book-200.png 1x, ./ressources/images/micro-frontends-in-action-book-400.png 2x" alt="book cover Micro Frontends in Action" loading="lazy">
+                </a>
+                <div class="book__text">
+                  <strong>Micro Frontends in Action</strong>
+                  <p>Посмотреть рабочее приложение на <a href="https://the-tractor.store/">the-tractor.store</a>.</p>
+                  <p>Купить печатную или электронную книгу
+                    на <a href="https://www.manning.com/books/micro-frontends-in-action?a_aid=mfia&a_bid=5f09fdeb">Manning Publications</a>, <a href="https://the-tractor.store/book">Amazon</a> или в <a href="https://en.wikipedia.org/wiki/Special:BookSources?isbn=1617296872" class="favorite-link">вашем любимом магазине</a>.
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
         </aside>
+
       </div>
     </div>
 
-    {% if site.google_analytics %}
-      <script type="text/javascript">
-        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-        ga('create', '{{ site.google_analytics }}', 'auto');
-        ga('send', 'pageview');
-      </script>
-    {% endif %}
   </body>
 </html>
